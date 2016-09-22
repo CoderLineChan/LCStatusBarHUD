@@ -22,13 +22,14 @@
     
 }
 - (IBAction)success {
-    [LCStatusBarHUD showSuccess:@"成功"];
+//    [LCStatusBarHUD showSuccess:@"成功"];
+    [LCStatusBarHUD showMessage:@"成功" image:[UIImage imageNamed:@"Snip"]];
 }
 - (IBAction)error {
     [LCStatusBarHUD showError:@"失败"];
 }
 - (IBAction)loading {
-    [LCStatusBarHUD showLoading:@"正在加载..."];
+    [LCStatusBarHUD showLoading:@"加载加载加载加载"];
 }
 - (IBAction)disimiss {
     [LCStatusBarHUD dismiss];
